@@ -22,7 +22,7 @@
   });
   myDataRef.on('child_added', function(snapshot) {
     var message = snapshot.val();
-    console.log(snapshot);
+    console.log(snapshot.val());
     displayChatMessage(message.name, message.text);
   });
   function displayChatMessage(name, text) {
